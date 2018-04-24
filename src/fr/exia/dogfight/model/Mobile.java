@@ -11,9 +11,11 @@ public class Mobile implements IMobile{
 	private Dimension dimension;
 	private Image images[];
 	DogFightModel dogfightModel;
+	final Point point;
 	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image) {
-		
+		this.point = new Point();
+		point.setLocation(position.getX(), position.getY());
 	}
 	
 	public Direction getDirection() {
@@ -25,7 +27,7 @@ public class Mobile implements IMobile{
 	}
 	
 	public Point getPosition() {
-		return null;
+		return this.point.getLocation();
 	}
 	
 	public Dimension getDimension() {
@@ -33,15 +35,15 @@ public class Mobile implements IMobile{
 	}
 	
 	public int getSpeed() {
-		return 1;
+		return this.speed;
 	}
 	
 	public int getWidth() {
-		return 1;
+		return this.dimension.getWidth();
 	}
 	
 	public int getHeight() {
-		return 1;
+		return this.dimension.getHeight();
 	}
 	
 	public void move() {
@@ -57,19 +59,19 @@ public class Mobile implements IMobile{
 	}
 	
 	private void moveUp() {
-		
+		this.point.setLocation(this.position.getX(),this.position.getY()-1);
 	}
 	
 	private void moveRight() {
-		
+		this.point.setLocation(this.position.getX()+1,this.position.getY());
 	}
 	
 	private void moveDown() {
-		
+		this.point.setLocation(this.position.getX(),this.position.getY()+1);
 	}
 	
 	private void moveLeft() {
-		
+		this.point.setLocation(this.position.getX()-1,this.position.getY());
 	}
 	
 	public Color getColor() {
