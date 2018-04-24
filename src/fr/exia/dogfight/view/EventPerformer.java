@@ -15,13 +15,27 @@ public class EventPerformer implements IEventPerformer {
 	}
 	
 	@Override
-	public void eventPerform(KeyEvent keyCode) {
-		// TODO Auto-generated method stub
+	public void eventPerform(KeyEvent keyEvent) {
+		int keyCode = keyEvent.getKeyCode();
+		keyCodeToUserOrder(keyCode);
 		
 	}
 	
 	private UserOrder keyCodeToUserOrder(int keyCode) {
-		return new UserOrder(1, null);
+		
+		switch (keyCode) {
+		case :
+			return new UserOrder(1, "UP");
+			break;
+			
+		case 2:
+			return new UserOrder(2, "UP");
+			break;	
+			
+		default:
+			break;
+		}
+		;
 	}
 	
 }

@@ -15,15 +15,23 @@ public class GameFrame extends JFrame implements KeyListener {
 		this.eventPerformer = eventPerformer;
 	}
 
+	@Override
 	public void keyPressed(KeyEvent keyEvent) {
+	      eventPerformer.eventPerform(keyEvent);
 
+		
 	}
 
+	@Override
 	public void keyReleased(KeyEvent keyEvent) {
-
+		eventPerformer.eventPerform(keyEvent);
+		
 	}
 
+	@Override
 	public void keyTyped(KeyEvent keyEvent) {
-
+		eventPerformer.eventPerform(keyEvent);
+		
 	}
-}
+
+}	
