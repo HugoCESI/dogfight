@@ -3,9 +3,9 @@ package fr.exia.dogfight.model;
 import java.awt.Color;
 import java.awt.Image;
 
-public class Sky {
-	Dimension dimension;
-	Image image;
+public class Sky implements IArea {
+	private Dimension dimension;
+	private Image image;
 
 	public Sky(Dimension dimension) {
 
