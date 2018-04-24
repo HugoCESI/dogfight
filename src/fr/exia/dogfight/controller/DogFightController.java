@@ -1,6 +1,7 @@
 package fr.exia.dogfight.controller;
 
 import fr.exia.dogfight.model.IDogFightModel;
+import fr.exia.dogfight.view.DogFightView;
 import fr.exia.dogfight.view.IViewSystem;
 
 public class DogFightController implements IOrderPerformer {
@@ -9,7 +10,7 @@ public class DogFightController implements IOrderPerformer {
 	private IViewSystem viewSystem;
 	
 	public DogFightController(IDogFightModel dogFightModel) {
-		
+		this.dogFightModel = dogFightModel;
 	}
 	public void orderPerform(UserOrder userOrder) {
 		
