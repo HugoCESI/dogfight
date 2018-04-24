@@ -91,7 +91,7 @@ public class Mobile implements IMobile {
 	}
 
 	public void setDogFightModel(IDogFightModel dogfightModel) {
-		MaxX
+		
 	}
 
 	public boolean hit() {
