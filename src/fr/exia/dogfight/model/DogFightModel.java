@@ -16,15 +16,15 @@ public class DogFightModel extends Observable implements IDogFightModel {
 	}
 
 	public void buildArea(Dimension dimension) {
-
+		
 	}
 
 	public void addMobile(IMobile Mobile) {
-
+		
 	}
 
 	public void removeMobile(IMobile Mobile) {
-
+		
 	}
 
 	public ArrayList<IMobile> getMobiles() {
@@ -32,7 +32,7 @@ public class DogFightModel extends Observable implements IDogFightModel {
 	}
 
 	public void setMobilesHavesMoved() {
-
+		
 	}
 
 	@Override
@@ -42,7 +42,6 @@ public class DogFightModel extends Observable implements IDogFightModel {
 	}
 
 	public IMobile getMobileByPlayer(int player) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

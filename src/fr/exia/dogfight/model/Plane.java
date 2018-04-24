@@ -12,7 +12,7 @@ public class Plane extends Mobile{
         return true;
     }
     public boolean hit() {
-        return true;
+        return false;
     }
     
 }

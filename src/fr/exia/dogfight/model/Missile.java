@@ -20,10 +20,13 @@ public class Missile extends Mobile {
     }
     
     public void move() {
-        
+        this.distanceTraveled += 4;
+        if (this.distanceTraveled == MAX_DISTANCE_TRAVELED) {
+        	isWeapon();
+        }
     }
     
     public boolean isWeapon() {
-        return true;
+        return false;
     }
 }
