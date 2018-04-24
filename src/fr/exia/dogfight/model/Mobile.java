@@ -9,6 +9,8 @@ public class Mobile implements IMobile{
 	private Direction direction;
 	private Position position;
 	private Dimension dimension;
+	private Image images[];
+	DogFightModel dogfightModel;
 	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image) {
 		
@@ -23,7 +25,7 @@ public class Mobile implements IMobile{
 	}
 	
 	public Point getPosition() {
-		return position;
+		return null;
 	}
 	
 	public Dimension getDimension() {
@@ -51,7 +53,7 @@ public class Mobile implements IMobile{
 	}
 	
 	public boolean isPlayer(int player) {
-		
+		return true;
 	}
 	
 	private void moveUp() {
@@ -71,11 +73,11 @@ public class Mobile implements IMobile{
 	}
 	
 	public Color getColor() {
-		
+		return new Color(1);
 	}
 	
 	public IDogFightModel getDogFightModel() {
-		
+		return null;
 	}
 	
 	public void setDogFightModel(IDogFightModel dogfightModel) {
@@ -83,14 +85,20 @@ public class Mobile implements IMobile{
 	}
 	
 	public boolean hit() {
-		
+		return true;
 	}
 	
 	public boolean isWeapon() {
-		
+		return true;
 	}
 	
 	public Image getImage() {
+		return null;
+	}
+
+	@Override
+	public void setDogFightModel(DogFightModel dogfightModel) {
+		// TODO Auto-generated method stub
 		
 	}
 }
