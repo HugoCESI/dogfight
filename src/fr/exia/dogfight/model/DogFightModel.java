@@ -1,8 +1,9 @@
 package fr.exia.dogfight.model;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
-public class DogFightModel implements IDogFightModel {
+public class DogFightModel extends Observable implements IDogFightModel {
 	private Sky sky;
 	private ArrayList<IMobile> mobiles;
 
