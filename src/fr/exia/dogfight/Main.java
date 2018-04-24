@@ -1,4 +1,4 @@
-package dogfight;
+package fr.exia.dogfight;
 
 public class Main {
 
