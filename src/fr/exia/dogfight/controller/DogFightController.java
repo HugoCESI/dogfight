@@ -3,7 +3,7 @@ package fr.exia.dogfight.controller;
 import fr.exia.dogfight.model.IDogFightModel;
 import fr.exia.dogfight.view.IViewSystem;
 
-public class DogFightController {
+public class DogFightController implements IOrderPerformer {
 	private static int TIME_SLEEP = 30;
 	private IDogFightModel dogFightModel;
 	private IViewSystem viewSystem;
