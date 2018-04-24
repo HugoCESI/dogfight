@@ -10,8 +10,8 @@ import fr.exia.gameframe.IGraphicsBuilder;
 
 public class GraphicsBuilder implements IGraphicsBuilder {
 	
-	IDogFightModel dogFightModel;
-	BufferedImage bufferedImage = new BufferedImage(null, null, false, null);
+	private IDogFightModel dogFightModel;
+	private BufferedImage emptySky;
 	
 	public GraphicsBuilder(IDogFightModel dogFightModel) {
 		
@@ -22,6 +22,10 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	}
 	
 	private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver imageObserver) {
+		
+	}
+	
+	private void buildEmptySky() {
 		
 	}
 
